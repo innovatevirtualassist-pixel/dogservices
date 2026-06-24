@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Summer Dog Safety Tips | Penkridge Dog Services",
   description:
-    "Learn how to keep dogs safe during hot weather in Penkridge and Staffordshire. Advice on heatstroke, hydration, hot pavements and summer walks.",
+    "Learn how to keep dogs safe during hot weather in Penkridge and Staffordshire. Advice on hot pavements, hydration, heatstroke signs and safe summer walks.",
   alternates: {
     canonical:
       "https://www.penkridgedogservices.co.uk/summer-dog-safety",
@@ -23,22 +23,21 @@ export default function SummerDogSafetyPage() {
 
 
       <h1 className="text-4xl font-bold mb-10">
-        Summer Dog Safety Tips ☀️🐶
+        Summer Dog Safety Tips ☀️🐾
       </h1>
 
 
       <article>
 
         <h2 className="text-2xl font-semibold mb-4">
-          Summer Dog Safety: Avoid Hot Pavements ☀️🐾
+          Avoid Hot Pavements During Summer Walks
         </h2>
 
 
         <p>
-          One of the biggest dangers for dogs during warm weather is hot
-          pavement and tarmac. Even when the air temperature feels comfortable
-          to us, pavements can become much hotter and may cause painful burns
-          to sensitive paw pads.
+          Warm weather is wonderful for enjoying the outdoors, but hot
+          pavements and tarmac can become dangerous for dogs. Their paw pads
+          are sensitive and can burn quickly on hot surfaces.
         </p>
 
 
@@ -51,13 +50,14 @@ export default function SummerDogSafetyPage() {
 
         <p className="mt-4">
           During warmer days, we choose grassy routes, shaded footpaths and
-          cooler walking times to help keep dogs comfortable and safe.
+          cooler walking times around Penkridge to help keep dogs comfortable
+          and safe.
         </p>
 
 
         <img
           src="/images/hot-pavement-dog-walk.jpg"
-          alt="Dog walking safely during warm weather in Penkridge Staffordshire"
+          alt="Dog walking safely during summer in Penkridge Staffordshire"
           className="rounded-xl mt-8 w-full"
         />
 
@@ -68,21 +68,20 @@ export default function SummerDogSafetyPage() {
 
 
         <p>
-          Early morning and later evening walks are often the safest option
+          Early morning and later evening walks are often the safest options
           during hot weather. Temperatures are lower, pavements have cooled
           down and dogs can enjoy their walks more comfortably.
         </p>
 
 
         <p className="mt-4">
-          Some days may simply be too hot for longer walks. On those occasions,
-          shorter outings combined with indoor enrichment can be a much safer
-          alternative.
+          Some days may simply be too warm for longer walks. Shorter walks
+          combined with indoor enrichment can be a much safer alternative.
         </p>
 
 
         <h3 className="text-xl font-semibold mt-8">
-          Indoor Play Can Be Just As Fun
+          Indoor Play Can Be Just As Fun 🏠🐶
         </h3>
 
 
@@ -90,7 +89,7 @@ export default function SummerDogSafetyPage() {
           Dogs do not always need long outdoor adventures to stay happy.
           Indoor games, training sessions, scent work, puzzle toys and
           enrichment activities provide excellent mental stimulation while
-          avoiding the risks associated with extreme temperatures.
+          avoiding the risks of extreme heat.
         </p>
 
 
@@ -106,8 +105,8 @@ export default function SummerDogSafetyPage() {
 
 
         <p>
-          Heatstroke is a serious emergency that can develop quickly. Dog
-          owners should be aware of the warning signs:
+          Heatstroke is a serious emergency that can develop quickly. Look out
+          for these warning signs:
         </p>
 
 
@@ -115,46 +114,44 @@ export default function SummerDogSafetyPage() {
           <li>Excessive panting</li>
           <li>Heavy drooling</li>
           <li>Bright red gums or tongue</li>
-          <li>Lethargy or weakness</li>
+          <li>Weakness or tiredness</li>
           <li>Vomiting or diarrhoea</li>
-          <li>Disorientation or wobbliness</li>
-          <li>Difficulty breathing</li>
-          <li>Collapse or loss of consciousness</li>
+          <li>Difficulty walking</li>
+          <li>Disorientation</li>
+          <li>Collapse</li>
         </ul>
 
 
         <h3 className="text-xl font-semibold mt-8">
-          What To Do If You Suspect Heatstroke
+          What To Do If A Dog Has Heatstroke
         </h3>
 
 
         <p>
-          If you believe a dog may be suffering from heatstroke, act
-          immediately.
+          If you suspect heatstroke, act quickly:
         </p>
 
 
         <ul className="list-disc ml-6 mt-3">
-          <li>Move the dog to a cool shaded area.</li>
-          <li>Offer small amounts of cool drinking water.</li>
-          <li>Pour cool (not ice-cold) water over the body.</li>
-          <li>Place wet towels on the dog if available.</li>
-          <li>Use airflow or a fan to help cooling.</li>
-          <li>Contact your vet immediately.</li>
+          <li>Move the dog to a cool shaded area</li>
+          <li>Offer small amounts of cool drinking water</li>
+          <li>Cool the dog gradually with cool (not ice cold) water</li>
+          <li>Use airflow or a fan if available</li>
+          <li>Contact your vet immediately</li>
         </ul>
 
 
-        <p className="mt-4">
-          Avoid using ice or very cold water, as rapid cooling can sometimes
-          cause additional complications. Even if a dog appears to recover,
-          veterinary advice should always be sought as heatstroke can cause
-          serious internal damage.
+        <p className="mt-6">
+          Avoid using ice or extremely cold water as rapid cooling can cause
+          complications. Even if a dog appears better, veterinary advice should
+          still be sought as heatstroke can cause serious internal damage.
         </p>
 
 
         <p className="mt-8">
-          With a little extra care and planning, dogs can still enjoy summer
-          safely while staying cool, comfortable and happy. ❤️🐶
+          Keeping dogs safe in summer is about choosing cooler times, checking
+          surfaces and knowing when to slow down. With a little extra care,
+          dogs can still enjoy summer safely. ❤️🐶
         </p>
 
 

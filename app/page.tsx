@@ -64,7 +64,19 @@ export default function Home() {
       </p>
     </a>
 
+<a
+      href="/summer-dog-safety"
+      className="rounded-xl border p-6 hover:shadow-lg transition"
+    >
+      <h3 className="text-xl font-semibold mb-3">
+       ☀️ Summer Dog Safety Tips
+      </h3>
 
+      <p>
+        Learn about hot pavements, heatstroke signs and keeping dogs cool during
+    summer walks in Penkridge.
+      </p>
+    </a>
   </div>
 
 </section>
