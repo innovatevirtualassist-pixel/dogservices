@@ -6,11 +6,23 @@ description:
 "Learn how to introduce dogs safely and confidently. Expert dog walking and pet care advice from Penkridge Dog Services.",
 };
 
-export default function DogIntroductionsPage() {
-return (
+export default function HowToIntroduceDogsPage() {
+  return (
+    <main className="max-w-5xl mx-auto px-6 py-16">
+
+      <a
+        href="/"
+        className="inline-block mb-8 text-sm font-semibold hover:underline"
+      >
+        ← Back to Penkridge Dog Services
+      </a>
+
+      <h1 className="text-4xl font-bold mb-10">
+        How to Introduce Dogs to Each Other Safely 🐶🐾
+      </h1>
 
 
-How to Introduce Dogs to Each Other Safely
+      <article>
 
     <p>
       Whether you're bringing home a new puppy, arranging a play date, or
