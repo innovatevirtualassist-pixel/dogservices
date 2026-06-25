@@ -46,10 +46,13 @@ export default function KitchenFloorClubPage() {
         </p>
 
         <img
-          src="/images/kitchen-floor-club.jpg"
+          src="/images/kitchen-floor-club-1.jpeg"
           alt="Dog relaxing on a cool kitchen floor during warm weather"
           className="rounded-xl mt-8 w-full"
         />
+        <p className="mt-3 text-sm">
+  A proud member of the Kitchen Floor Club enjoying the coolest spot in the house.
+</p>
 
         <h2 className="text-2xl font-semibold mt-8">
           Why Dogs Love Cool Floors
@@ -60,7 +63,21 @@ export default function KitchenFloorClubPage() {
           differently and often seek out cooler surfaces when the weather warms
           up.
         </p>
+<video
+  controls
+  poster="/images/kitchen-floor-club-1.jpg"
+  className="rounded-xl mt-8 w-full"
+>
+  <source
+    src="/videos/kitchen-floor-club.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support video.
+</video>
 
+<p className="mt-3 text-sm">
+  Sometimes the best summer activity is simply finding a cool spot and relaxing.
+</p>
         <p className="mt-4">
           Tile, stone and laminate floors can feel noticeably cooler than beds,
           rugs and furniture, helping dogs stay comfortable during hot weather.
@@ -86,7 +103,15 @@ export default function KitchenFloorClubPage() {
           good company. Membership appears to be growing rapidly across
           Penkridge. ❤️🐾
         </p>
+<img
+  src="/images/kitchen-floor-club-2.jpeg"
+  alt="Happy dog cooling down on the kitchen floor during a hot Staffordshire day"
+  className="rounded-xl mt-8 w-full"
+/>
 
+<p className="mt-3 text-sm">
+  Keeping cool, staying comfortable and taking life easy on a warm day.
+</p>
       </article>
 
       <div className="mt-10 space-y-4">
