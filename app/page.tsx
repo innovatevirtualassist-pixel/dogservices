@@ -77,6 +77,21 @@ export default function Home() {
     summer walks in Penkridge.
       </p>
     </a>
+
+    <a
+  href="/how-to-introduce-dogs"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    How to Introduce Dogs Safely 🐶🐾
+  </h3>
+
+  <p>
+    Helpful tips on introducing dogs to each other, reading body language and
+    creating positive experiences for new friendships.
+  </p>
+</a>
+    
   </div>
 
 </section>
