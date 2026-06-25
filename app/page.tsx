@@ -91,6 +91,19 @@ export default function Home() {
     creating positive experiences for new friendships.
   </p>
 </a>
+    <a
+  href="/kitchen-floor-club"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    Kitchen Floor Club ❄️🐶
+  </h3>
+
+  <p>
+    Too hot outside? Discover why the coolest place in the house has become
+    every dog's favourite summer hangout.
+  </p>
+</a>
     
   </div>
 
