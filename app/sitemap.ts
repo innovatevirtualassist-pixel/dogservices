@@ -36,8 +36,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.penkridgedogservices.co.uk/local-dog-walks",
       lastModified: new Date(),
     },
+    
     {
  url: "https://www.penkridgedogservices.co.uk/summer-dog-safety"
 },
+    
+    {
+  url: "https://www.penkridgedogservices.co.uk/how-to-introduce-dogs",
+},
+    
+{
+  url: "https://www.penkridgedogservices.co.uk/dog-services",
+},
+    
   ]
 }
