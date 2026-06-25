@@ -48,6 +48,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 {
   url: "https://www.penkridgedogservices.co.uk/dog-services",
 },
+    {
+  url: "https://www.penkridgedogservices.co.uk/kitchen-floor-club",
+},
     
   ]
 }
