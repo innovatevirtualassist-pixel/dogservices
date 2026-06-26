@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Dog Walk Calendar | Penkridge Dog Services",
-  description: "See upcoming dog walks, availability and events.",
+  title: "🐾 Upcoming Walks & Events | Penkridge Dog Services",
+  description: "Updated regularly with upcoming walks, social events and availability. Check back for the latest updates.",
 };
 
 export default function CalendarPage() {
