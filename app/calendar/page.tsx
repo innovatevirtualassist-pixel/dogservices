@@ -18,7 +18,7 @@ export default function CalendarPage() {
 
       <div className="rounded-2xl overflow-hidden shadow-lg border">
         <iframe
-          src="https://calendar.google.com/calendar/embed?src=innovatevirtualassist%40gmail.com&ctz=Europe%2FLondon"
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&title=Penkridge%20Dog%20Services&showPrint=0&src=aW5ub3ZhdGV2aXJ0dWFsYXNzaXN0QGdtYWlsLmNvbQ&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ad1457&color=%230b8043"
           style={{ border: 0 }}
           width="100%"
           height="700"
