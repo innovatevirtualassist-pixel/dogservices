@@ -18,7 +18,7 @@ export default function CalendarPage() {
 
       <div className="rounded-2xl overflow-hidden shadow-lg border">
         <iframe
-          src="PASTE-YOUR-GOOGLE-CALENDAR-EMBED-LINK-HERE"
+          src="<iframe src="https://calendar.google.com/calendar/embed?src=innovatevirtualassist%40gmail.com&ctz=Europe%2FLondon" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>"
           style={{ border: 0 }}
           width="100%"
           height="700"
