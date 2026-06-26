@@ -51,6 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
   url: "https://www.penkridgedogservices.co.uk/kitchen-floor-club",
 },
+    {
+  url: "https://www.penkridgedogservices.co.uk/calendar",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
     
   ]
 }
