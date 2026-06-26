@@ -111,5 +111,6 @@ export default function Home() {
       </main>
       <Footer />
     </>
+    <Link href="/calendar">Calendar</Link>
   )
 }
