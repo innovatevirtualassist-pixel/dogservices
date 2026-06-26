@@ -7,13 +7,11 @@ export default function CalendarPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-24">
       <h1 className="text-4xl font-bold mb-6">
-        Dog Walk Calendar
+        🐾 Upcoming Walks & Events
       </h1>
 
       <p className="mb-8 text-lg">
-        Check our latest walks, puppy meet-ups, availability and upcoming
-        events. This calendar updates automatically whenever we add something
-        new.
+        Updated regularly with upcoming walks, social events and availability. Check back for the latest updates.
       </p>
 
       <div className="rounded-2xl overflow-hidden shadow-lg border">
