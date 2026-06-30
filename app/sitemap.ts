@@ -57,6 +57,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "weekly",
   priority: 0.8,
 },
+    {
+  url: "https://www.penkridgedogservices.co.uk/beach-adventures",
+},
     
   ]
 }
