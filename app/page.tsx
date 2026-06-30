@@ -104,6 +104,21 @@ export default function Home() {
     every dog's favourite summer hangout.
   </p>
 </a>
+
+    <a
+  href="/beach-adventures"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    Beach Adventures 🏖️🐶
+  </h3>
+
+  <p>
+    Looking for your next dog-friendly day out? Discover why a beach adventure
+    is the perfect way to let your dog explore, play and make unforgettable
+    memories.
+  </p>
+</a>
     
   </div>
 
