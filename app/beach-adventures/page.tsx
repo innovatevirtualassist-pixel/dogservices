@@ -1,143 +1,106 @@
-import type { Metadata } from "next"
+<article>
 
-export const metadata: Metadata = {
-  title: "Beach Adventures for Dogs | Penkridge Dog Services",
-  description:
-    "Looking for a special day out? Discover why a beach adventure can be a wonderful experience for dogs, with tips from Penkridge Dog Services.",
-  alternates: {
-    canonical:
-      "https://www.penkridgedogservices.co.uk/beach-adventures",
-  },
-}
+  <h2 className="text-2xl font-semibold mb-4">
+    Our Beach Adventure at Black Rock Sands, Porthmadog 🏖️🐾
+  </h2>
 
-export default function BeachAdventuresPage() {
-  return (
-    <main className="max-w-5xl mx-auto px-6 py-16">
+  <p>
+    One of our favourite adventures recently was a trip to <strong>Black Rock
+    Sands, Porthmadog (LL49 9YB)</strong> in beautiful North Wales. The beach
+    offers an incredible stretch of wide, soft sand that's perfect for dogs to
+    explore, sniff, run and simply enjoy being outdoors.
+  </p>
 
-      <a
-        href="/"
-        className="inline-block mb-8 text-sm font-semibold hover:underline"
-      >
-        ← Back to Penkridge Dog Services
-      </a>
+  <p className="mt-4">
+    We absolutely loved watching our dog race across the beach, roll happily in
+    the sand and enjoy plenty of zoomies with the sea stretching out in the
+    background. There's something special about seeing a dog experience such a
+    huge open space with so many exciting sights, sounds and smells.
+  </p>
 
-      <h1 className="text-4xl font-bold mb-10">
-        Adventure Idea: A Day at the Beach! 🏖️🐶
-      </h1>
+  <img
+    src="/images/black-rock-sands-sign.jpg"
+    alt="Welcome sign at Black Rock Sands, Porthmadog"
+    className="rounded-xl mt-8 w-full"
+  />
 
-      <article>
+  <p className="mt-3 text-sm">
+    Black Rock Sands welcomes visitors with excellent facilities and beautiful
+    scenery.
+  </p>
 
-        <p>
-          Every now and then, it's lovely to swap countryside paths for
-          something completely different. A beach adventure offers dogs a whole
-          new world to explore, from soft sand beneath their paws to exciting
-          new smells carried by the sea breeze.
-        </p>
+  <p className="mt-8">
+    One thing that really stood out to us was how well equipped the beach is.
+    It was reassuring to see a publicly accessible defibrillator on site,
+    together with convenient parking and toilet facilities. Having these
+    amenities nearby offers extra peace of mind when spending the day out with
+    your four-legged companion.
+  </p>
 
-        <p className="mt-4">
-          For many dogs, the beach is the perfect place to enjoy a change of
-          scenery. Whether they're running across the sand, paddling at the
-          water's edge or simply taking everything in, it can become a day full
-          of fun, enrichment and happy memories.
-        </p>
+  <img
+    src="/images/black-rock-sands-defibrillator.jpg"
+    alt="Defibrillator available at Black Rock Sands"
+    className="rounded-xl mt-8 w-full"
+  />
 
-        <img
-          src="/images/dog-beach-adventure.jpg"
-          alt="Happy dog enjoying a beach adventure"
-          className="rounded-xl mt-8 w-full"
-        />
+  <h2 className="text-2xl font-semibold mt-10">
+    Plenty of Room for Zoomies
+  </h2>
 
-        <p className="mt-3 text-sm">
-          Every adventure starts with a wagging tail and plenty of excitement.
-        </p>
+  <p>
+    Black Rock Sands does have seasonal dog restrictions, so it's always worth
+    checking the current rules before visiting. Even so, the beach is so vast
+    that there was still an enormous amount of space where dogs could enjoy
+    themselves responsibly.
+  </p>
 
-        <h2 className="text-2xl font-semibold mt-10">
-          Why Dogs Love the Beach
-        </h2>
+  <p className="mt-4">
+    The soft sand made the perfect playground for rolling around, chasing after
+    toys and burning off energy. Watching happy zoomies across the beach was
+    definitely one of the highlights of our visit.
+  </p>
 
-        <ul className="list-disc ml-6 mt-4 space-y-2">
-          <li>Lots of space to explore.</li>
-          <li>Interesting smells and new surroundings.</li>
-          <li>Soft sand that's gentle on paws.</li>
-          <li>Opportunities to paddle and cool off safely.</li>
-          <li>A fantastic way to provide mental and physical enrichment.</li>
-        </ul>
+  <img
+    src="/images/happy-dog-black-rock-sands.jpg"
+    alt="Happy dog enjoying Black Rock Sands beach"
+    className="rounded-xl mt-8 w-full"
+  />
 
-        <video
-          controls
-          poster="/images/dog-beach-adventure.jpg"
-          className="rounded-xl mt-10 w-full"
-        >
-          <source
-            src="/videos/dog-beach-adventure.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support video.
-        </video>
+  <video
+    controls
+    poster="/images/happy-dog-black-rock-sands.jpg"
+    className="rounded-xl mt-10 w-full"
+  >
+    <source
+      src="/videos/dog-zoomies-black-rock-sands.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support video.
+  </video>
 
-        <p className="mt-3 text-sm">
-          Nothing beats zoomies on the sand and a splash in the sea!
-        </p>
+  <p className="mt-3 text-sm">
+    Nothing beats watching a happy dog enjoy the freedom of the beach.
+  </p>
 
-        <h2 className="text-2xl font-semibold mt-10">
-          Beach Safety Tips
-        </h2>
+  <h2 className="text-2xl font-semibold mt-10">
+    Our Tips Before You Visit
+  </h2>
 
-        <ul className="list-disc ml-6 mt-4 space-y-2">
-          <li>Always check if dogs are allowed on the beach.</li>
-          <li>Bring plenty of fresh drinking water.</li>
-          <li>Discourage dogs from drinking seawater.</li>
-          <li>Watch for hot sand during very warm weather.</li>
-          <li>Rinse off salt and sand after your visit.</li>
-          <li>Keep an eye on tides and stronger waves.</li>
-        </ul>
+  <ul className="list-disc ml-6 mt-4 space-y-2">
+    <li>Check the latest seasonal dog restrictions before travelling.</li>
+    <li>Bring plenty of fresh drinking water.</li>
+    <li>Discourage dogs from drinking seawater.</li>
+    <li>Take regular breaks, especially on warm days.</li>
+    <li>Rinse sand and saltwater from your dog before heading home.</li>
+    <li>Leave the beach exactly as you found it by cleaning up after your dog.</li>
+  </ul>
 
-        <p className="mt-8">
-          Whether it's their very first seaside adventure or one of many,
-          there's something magical about watching a happy dog discover the
-          beach. New scents, open space and the sound of the waves make for an
-          unforgettable day out.
-        </p>
+  <p className="mt-8">
+    We thoroughly enjoyed our visit to Black Rock Sands and would happily
+    recommend it to anyone looking for a memorable dog-friendly day out in North
+    Wales. The combination of stunning scenery, huge open spaces and excellent
+    facilities made it a wonderful adventure that we'll definitely be returning
+    to.
+  </p>
 
-        <p className="mt-6">
-          Sometimes the best adventures are simply about exploring somewhere
-          new together. ❤️🐶🏖️
-        </p>
-
-      </article>
-
-      <div className="mt-10 space-y-4">
-
-        <a
-          href="/local-dog-walks"
-          className="block font-semibold hover:underline"
-        >
-          🌿 Explore our favourite local walks →
-        </a>
-
-        <a
-          href="/recent-walks"
-          className="block font-semibold hover:underline"
-        >
-          🐾 Read our latest dog updates →
-        </a>
-
-        <a
-          href="/summer-dog-safety"
-          className="block font-semibold hover:underline"
-        >
-          ☀️ Summer dog safety tips →
-        </a>
-
-        <a
-          href="/contact"
-          className="block font-semibold hover:underline"
-        >
-          Contact Penkridge Dog Services →
-        </a>
-
-      </div>
-
-    </main>
-  )
-}
+</article>
