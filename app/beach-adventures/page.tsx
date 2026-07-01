@@ -1,4 +1,31 @@
-<article>
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Beach Adventures for Dogs | Penkridge Dog Services",
+  description:
+    "Looking for a special day out? Discover why a beach adventure can be a wonderful experience for dogs, with tips from Penkridge Dog Services.",
+  alternates: {
+    canonical:
+      "https://www.penkridgedogservices.co.uk/beach-adventures",
+  },
+}
+
+export default function BeachAdventuresPage() {
+  return (
+    <main className="max-w-5xl mx-auto px-6 py-16">
+
+      <a
+        href="/"
+        className="inline-block mb-8 text-sm font-semibold hover:underline"
+      >
+        ← Back to Penkridge Dog Services
+      </a>
+
+      <h1 className="text-4xl font-bold mb-10">
+        Adventure Idea: A Day at the Beach! 🏖️🐶
+      </h1>
+      
+      <article>
 
   <h2 className="text-2xl font-semibold mb-4">
     Our Beach Adventure at Black Rock Sands, Porthmadog 🏖️🐾
@@ -104,3 +131,38 @@
   </p>
 
 </article>
+  <div className="mt-10 space-y-4">
+
+        <a
+          href="/local-dog-walks"
+          className="block font-semibold hover:underline"
+        >
+          🌿 Explore our favourite local walks →
+        </a>
+
+        <a
+          href="/recent-walks"
+          className="block font-semibold hover:underline"
+        >
+          🐾 Read our latest dog updates →
+        </a>
+
+        <a
+          href="/summer-dog-safety"
+          className="block font-semibold hover:underline"
+        >
+          ☀️ Summer dog safety tips →
+        </a>
+
+        <a
+          href="/contact"
+          className="block font-semibold hover:underline"
+        >
+          Contact Penkridge Dog Services →
+        </a>
+
+      </div>
+
+    </main>
+  )
+}
