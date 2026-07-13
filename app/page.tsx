@@ -119,6 +119,19 @@ export default function Home() {
     memories.
   </p>
 </a>
+<a
+  href="/cyanobacteria-alert"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    ⚠️ Cyanobacteria Alert
+  </h3>
+
+  <p>
+    Important safety advice for dog owners about the current blue-green algae
+    alert affecting Sherbrook Valley and surrounding streams.
+  </p>
+</a>
     
   </div>
 
