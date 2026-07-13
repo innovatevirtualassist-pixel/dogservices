@@ -110,18 +110,6 @@ export default function TravellingWithYourDogPage() {
           facilities for four-legged guests.
         </p>
 
-        <video
-          controls
-          poster="/images/dog-road-trip.jpg"
-          className="rounded-xl mt-10 w-full"
-        >
-          <source
-            src="/videos/dog-road-trip.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support video.
-        </video>
-
         <p className="mt-3 text-sm">
           Every journey becomes another adventure when dogs travel safely.
         </p>
