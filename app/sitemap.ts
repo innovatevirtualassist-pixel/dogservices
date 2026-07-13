@@ -60,6 +60,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
   url: "https://www.penkridgedogservices.co.uk/beach-adventures",
 },
-    
+    {
+  url: "https://www.penkridgedogservices.co.uk/cyanobacteria-alert",
+  lastModified: new Date(),
+  changeFrequency: "daily",
+  priority: 0.8,
+},
   ]
 }
