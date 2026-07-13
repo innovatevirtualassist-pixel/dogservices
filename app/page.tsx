@@ -132,6 +132,19 @@ export default function Home() {
     alert affecting Sherbrook Valley and surrounding streams.
   </p>
 </a>
+    <a
+  href="/travelling-with-your-dog"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🚗 Travelling Safely With Your Dog
+  </h3>
+
+  <p>
+    Planning a road trip or holiday? Discover practical travel tips to keep
+    your dog safe, comfortable and happy wherever your adventures take you.
+  </p>
+</a>
     
   </div>
 
