@@ -34,12 +34,6 @@ export default function TravellingWithYourDogPage() {
           journey safe, comfortable and enjoyable for everyone.
         </p>
 
-        <img
-          src="/images/dog-car-travel.jpg"
-          alt="Dog travelling safely in a car"
-          className="rounded-xl mt-8 w-full"
-        />
-
         <p className="mt-3 text-sm">
           Safe travel starts before you even set off.
         </p>
