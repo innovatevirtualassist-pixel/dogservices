@@ -170,6 +170,19 @@ export default function Home() {
     healthy all year round.
   </p>
 </a>
+    <a
+  href="/pet-sitting-penkridge"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🏡 Pet Sitting While You're Away
+  </h3>
+
+  <p>
+    Going on holiday or working late? Discover our caring home pet sitting
+    visits across Penkridge for complete peace of mind.
+  </p>
+</a>
     
   </div>
 
