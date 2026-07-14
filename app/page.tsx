@@ -157,6 +157,19 @@ export default function Home() {
     your dog safe, comfortable and happy wherever your adventures take you.
   </p>
 </a>
+    <a
+  href="/dog-grooming-tips"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    ✂️ Dog Grooming Tips
+  </h3>
+
+  <p>
+    Discover simple grooming tips to keep your dog's coat, paws, ears and nails
+    healthy all year round.
+  </p>
+</a>
     
   </div>
 
