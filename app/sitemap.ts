@@ -78,5 +78,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "monthly",
   priority: 0.8,
 },
+    {
+  url: "https://www.penkridgedogservices.co.uk/dog-grooming-tips",
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
   ]
 }
