@@ -2,6 +2,12 @@ import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+   {
+  url: "https://www.penkridgedogservices.co.uk/dog-walking-weather",
+  lastModified: new Date(),
+  changeFrequency: "hourly",
+  priority: 0.9,
+},
     {
       url: "https://www.penkridgedogservices.co.uk/",
       lastModified: new Date(),
