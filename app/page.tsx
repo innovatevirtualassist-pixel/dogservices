@@ -34,7 +34,19 @@ export default function Home() {
 
   <div className="grid md:grid-cols-2 gap-6">
 
+<a
+  href="/dog-walking-weather"
+  className="rounded-xl border p-6 hover:shadow-lg transition bg-sky-50"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🌤 Today's Dog Walking Weather
+  </h3>
 
+  <p>
+    Check today's live weather in Penkridge, see our dog walk rating and get
+    expert advice before heading out with your dog.
+  </p>
+</a>
     <a
       href="/recent-walks"
       className="rounded-xl border p-6 hover:shadow-lg transition"
