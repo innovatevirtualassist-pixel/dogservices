@@ -183,6 +183,19 @@ export default function Home() {
     visits across Penkridge for complete peace of mind.
   </p>
 </a>
+    <a
+  href="/meeting-bigger-dogs"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🐶 Meeting Bigger & Older Dogs
+  </h3>
+
+  <p>
+    Helpful advice on introducing puppies, smaller and nervous dogs to larger,
+    older dogs safely and confidently.
+  </p>
+</a>
     
   </div>
 
