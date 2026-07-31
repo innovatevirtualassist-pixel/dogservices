@@ -7,13 +7,14 @@ import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navigation = [
-  { name: "Home", href: "#home" },
-  { name: "Services", href: "#services" },
-  { name: "About", href: "#about" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "FAQ", href: "#faq" },
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/#services" },
+  { name: "About", href: "/#about" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "FAQ", href: "/#faq" },
+  { name: "Advice", href: "/recent-walks" },
   { name: "Calendar", href: "/calendar" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "/#contact" },
 ]
 
 export function Header() {
