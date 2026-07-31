@@ -1,22 +1,25 @@
-import type { Metadata, Viewport } from "next"
-import { Inter, Poppins } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
-import { Schema } from "@/components/seo/Schema"
+import type { Metadata, Viewport } from "next";
+import { Inter, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
+import "./globals.css";
+
+import { Schema } from "@/components/seo/Schema";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-})
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   title:
@@ -28,22 +31,22 @@ export const metadata: Metadata = {
     canonical: "https://www.penkridgedogservices.co.uk",
   },
   icons: {
-  icon: "/favicon-16x16.png",
-  shortcut: "/favicon-16x16.png",
-  apple: "/apple-icon.png",
-},
-}
+    icon: "/favicon-16x16.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-icon.png",
+  },
+};
 
 export const viewport: Viewport = {
   themeColor: "#6b8f71",
   width: "device-width",
   initialScale: 1,
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
@@ -52,9 +55,17 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased">
         <Schema />
-        {children}
+
+        <Header />
+
+        <main className="pt-16">
+          {children}
+        </main>
+
+        <Footer />
+
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
-  )
+  );
 }
