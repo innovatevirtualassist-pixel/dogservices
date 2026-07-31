@@ -196,6 +196,19 @@ export default function Home() {
     older dogs safely and confidently.
   </p>
 </a>
+    <a
+  href="/pawsitive-pack-walks"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🐾 Pawsitive Pack Walks
+  </h3>
+
+  <p>
+    Meet our growing pack! Discover how we safely walk four or more dogs together,
+    helping them socialise, play and enjoy every adventure.
+  </p>
+</a>
     
   </div>
 
