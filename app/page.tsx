@@ -209,6 +209,19 @@ export default function Home() {
     helping them socialise, play and enjoy every adventure.
   </p>
 </a>
+    <a
+  href="/choosing-the-right-dog-toys"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🧸 Choosing the Right Dog Toys
+  </h3>
+
+  <p>
+    Discover the best toys for puppies and adult dogs, the benefits of
+    enrichment and which toys to avoid for safer playtime.
+  </p>
+</a>
     
   </div>
 
