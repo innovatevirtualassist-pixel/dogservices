@@ -214,7 +214,7 @@ export default function Home() {
   className="rounded-xl border p-6 hover:shadow-lg transition"
 >
   <h3 className="text-xl font-semibold mb-3">
-    🧸 Choosing the Right Dog Toys
+    🐶🐾 Choosing the Right Dog Toys
   </h3>
 
   <p>
