@@ -15,7 +15,7 @@ export default function ChoosingDogToysPage() {
     <main className="max-w-5xl mx-auto px-6 py-16">
 
       <h1 className="text-4xl font-bold mb-10">
-        Choosing the Right Toys for Your Dog 🧸🐶
+        Choosing the Right Toys for Your Dog 🐶
       </h1>
 
       <article>
