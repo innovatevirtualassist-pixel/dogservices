@@ -222,6 +222,20 @@ export default function Home() {
     enrichment and which toys to avoid for safer playtime.
   </p>
 </a>
+<a
+  href="/when-you-leave-your-dog"
+  className="rounded-xl border p-6 hover:shadow-lg transition"
+>
+  <h3 className="text-xl font-semibold mb-3">
+    🐾 Helping Your Dog Feel Less Alone
+  </h3>
+
+  <p>
+    Simple ways to help your dog feel safe, settled and comfortable when
+    you're away, including walking them beforehand and leaving a safe chew
+    or little treat as you head out the door.
+  </p>
+</a>
     
   </div>
 
