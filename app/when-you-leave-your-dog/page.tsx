@@ -51,7 +51,7 @@ export default function WhenYouLeaveYourDogPage() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <Image
-              src="/images/dogs/dog-feeling-safe-home-alone-penkridge.jpg"
+              src="/images/dog-feeling-safe-home-alone-penkridge.jpg"
               alt="Dog feeling safe and comfortable at home while alone"
               width={1200}
               height={800}
