@@ -83,6 +83,11 @@ export default function HuNorcenniGirasolePage() {
           couldn't help missing our own Evie while we were away. She was very
           much in our thoughts throughout the holiday.
         </p>
+        <img
+          src="/images/our-dog-missing-us.jpg"
+          alt="Wish we had our dog at this dog-friendly beach at hu Norcenni Girasole because our dog was missing us terribly."
+          className="rounded-xl w-full"
+        />
 
         <p>
           We know she was having a lovely time with Grandma though, and we're
