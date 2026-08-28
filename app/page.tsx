@@ -236,7 +236,19 @@ export default function Home() {
     or little treat as you head out the door.
   </p>
 </a>
-    
+    <a
+      href="/hu-norcenni-girasole"
+        className="rounded-xl border p-6 hover:shadow-lg transition"
+        >
+          <h3 className="text-xl font-semibold mb-3">
+              🇮🇹🐶 A Dog-Friendly Holiday in Tuscany
+                </h3>
+
+                  <p>
+                      Come along on our dog-friendly adventure at hu Norcenni Girasole,
+                          complete with a dog beach and walking areas made for four-legged guests.
+                            </p>
+                            </a>
   </div>
 
 </section>
