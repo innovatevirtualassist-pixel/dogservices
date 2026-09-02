@@ -1,28 +1,31 @@
+import InteractiveCalendar from "@/components/InteractiveCalendar";
+
 export const metadata = {
   title: "🐾 Upcoming Walks & Events | Penkridge Dog Services",
-  description: "Updated regularly with upcoming walks, social events and availability. Check back for the latest updates.",
+  description:
+    "Check upcoming dog walks, social walks, boarding availability and events with Penkridge Dog Services.",
 };
 
 export default function CalendarPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-24">
-      <h1 className="text-4xl font-bold mb-6">
-        🐾 Upcoming Walks & Events
-      </h1>
+    <main className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+      <section className="mb-10">
+        <h1 className="text-4xl md:text-5xl font-bold mb-5">
+          🐾 Upcoming Walks & Events
+        </h1>
 
-      <p className="mb-8 text-lg">
-        Updated regularly with upcoming walks, social events and availability. Check back for the latest updates.
+        <p className="text-lg leading-relaxed max-w-3xl">
+          Check our latest walks, social events and availability.
+          Click a date to find out more or send us an enquiry.
+        </p>
+      </section>
+
+      <InteractiveCalendar />
+
+      <p className="text-sm text-center mt-8 opacity-70">
+        Availability is indicative and will be confirmed with you before
+        your booking is secured.
       </p>
-
-      <div className="rounded-2xl overflow-hidden shadow-lg border">
-        <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&title=Penkridge%20Dog%20Services&showPrint=0&src=aW5ub3ZhdGV2aXJ0dWFsYXNzaXN0QGdtYWlsLmNvbQ&src=ZW4tZ2IudWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ad1457&color=%230b8043"
-          style={{ border: 0 }}
-          width="100%"
-          height="700"
-          loading="lazy"
-        ></iframe>
-      </div>
     </main>
   );
 }
