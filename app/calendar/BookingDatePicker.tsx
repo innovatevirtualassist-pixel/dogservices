@@ -4,7 +4,7 @@
 import { useState } from "react"
 import Link from "next/link"
 
-function getTodayUK() {
+function todayUK() {
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/London",
     year: "numeric",
@@ -12,26 +12,24 @@ function getTodayUK() {
     day: "2-digit",
   }).formatToParts(new Date())
 
-  const part = (type: string) =>
-    parts.find((item) => item.type === type)?.value ?? ""
+  const get = (type: string) =>
+    parts.find((p) => p.type === type)?.value ?? ""
 
-  return `${part("year")}-${part("month")}-${part("day")}`
+  return `${get("year")}-${get("month")}-${get("day")}`
 }
 
 function dateKey(year: number, month: number, day: number) {
-  return [
-    year,
-    String(month + 1).padStart(2, "0"),
-    String(day).padStart(2, "0"),
-  ].join("-")
+  return `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`
 }
 
 const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 export default function BookingDatePicker() {
-  const today = getTodayUK()
+  const today = todayUK()
   const [year, setYear] = useState(Number(today.slice(0, 4)))
   const [month, setMonth] = useState(Number(today.slice(5, 7)) - 1)
+  const [start, setStart] = useState("")
+  const [end, setEnd] = useState("")
 
   const firstDay = new Date(Date.UTC(year, month, 1))
   const daysInMonth = new Date(
@@ -56,15 +54,28 @@ export default function BookingDatePicker() {
     setMonth(next.getUTCMonth())
   }
 
+  function selectDate(date: string) {
+    if (!start || end || date < start) {
+      setStart(date)
+      setEnd("")
+    } else {
+      setEnd(date)
+    }
+  }
+
+  const bookingUrl = start
+    ? `/booking?date=${start}&end=${end || start}`
+    : "/booking"
+
   return (
-    <section className="mx-auto max-w-2xl rounded-2xl border border-emerald-100 bg-white p-5 shadow-sm md:p-8">
+    <section className="mx-auto max-w-2xl rounded-2xl border border-emerald-100 bg-white p-6 shadow-sm md:p-8">
       <h2 className="text-center text-2xl font-bold text-gray-900">
-        Choose Your Preferred Date 🐾
+        Choose Your Booking Dates 🐾
       </h2>
 
       <p className="mt-3 text-center text-sm leading-6 text-gray-600">
-        Select a date to start your booking enquiry.
-        All requests are subject to availability and approval.
+        Select one date for a single-day enquiry,
+        or select a start and end date for a longer stay.
       </p>
 
       <div className="mt-7 flex items-center justify-between">
@@ -73,7 +84,7 @@ export default function BookingDatePicker() {
           onClick={() => changeMonth(-1)}
           disabled={currentMonth}
           aria-label="Previous month"
-          className="rounded-lg border border-gray-200 px-4 py-2 text-gray-900 disabled:cursor-not-allowed disabled:opacity-30"
+          className="rounded-lg border px-4 py-2 disabled:opacity-30"
         >
           ←
         </button>
@@ -86,7 +97,7 @@ export default function BookingDatePicker() {
           type="button"
           onClick={() => changeMonth(1)}
           aria-label="Next month"
-          className="rounded-lg border border-gray-200 px-4 py-2 text-gray-900"
+          className="rounded-lg border px-4 py-2"
         >
           →
         </button>
@@ -110,35 +121,68 @@ export default function BookingDatePicker() {
           const day = index + 1
           const date = dateKey(year, month, day)
           const isPast = date < today
-
-          if (isPast) {
-            return (
-              <div
-                key={date}
-                className="flex aspect-square items-center justify-center rounded-xl bg-gray-50 text-sm text-gray-300"
-              >
-                {day}
-              </div>
-            )
-          }
+          const selected = date === start || date === end
+          const inRange = !!start && !!end && date > start && date < end
 
           return (
-            <Link
+            <button
               key={date}
-              href={`/booking?date=${date}`}
-              aria-label={`Request a booking for ${date}`}
-              className="flex aspect-square items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50 text-sm font-semibold text-emerald-900 transition hover:bg-emerald-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              type="button"
+              disabled={isPast}
+              onClick={() => selectDate(date)}
+              aria-label={`Select ${date}`}
+              aria-pressed={selected}
+              className={`flex aspect-square items-center justify-center rounded-xl border text-sm font-semibold transition ${
+                isPast
+                  ? "cursor-not-allowed border-gray-100 bg-gray-50 text-gray-300"
+                  : selected
+                    ? "border-emerald-800 bg-emerald-800 text-white"
+                    : inRange
+                      ? "border-emerald-200 bg-emerald-200 text-emerald-950"
+                      : "border-emerald-100 bg-emerald-50 text-emerald-900 hover:bg-emerald-200"
+              }`}
             >
               {day}
-            </Link>
+            </button>
           )
         })}
       </div>
 
-      <p className="mt-6 text-center text-xs leading-5 text-gray-500">
-        Selectable dates are not guaranteed to be available.
-        We will confirm your booking personally after reviewing
-        your request.
+      <div className="mt-7 rounded-xl bg-stone-50 p-5 text-sm text-gray-800">
+        <p>
+          <strong>Start date:</strong> {start || "Not selected"}
+        </p>
+
+        <p className="mt-2">
+          <strong>End date:</strong> {end || (start ? "Same day" : "Not selected")}
+        </p>
+
+        <p className="mt-3 text-xs text-gray-600">
+          To change your selection, click another date to start again.
+          You can select an end date in a different month.
+        </p>
+      </div>
+
+      <Link
+        href={bookingUrl}
+        aria-disabled={!start}
+        tabIndex={start ? 0 : -1}
+        onClick={(event) => {
+          if (!start) event.preventDefault()
+        }}
+        className={`mt-5 block rounded-xl px-6 py-4 text-center font-semibold text-white ${
+          start
+            ? "bg-emerald-800 hover:bg-emerald-900"
+            : "pointer-events-none bg-gray-400"
+        }`}
+      >
+        Request These Dates 🐾
+      </Link>
+
+      <p className="mt-4 text-center text-xs leading-5 text-gray-500">
+        Dates are requests only. Availability has not been
+        checked against Google Calendar, and bookings
+        require personal confirmation.
       </p>
     </section>
   )
