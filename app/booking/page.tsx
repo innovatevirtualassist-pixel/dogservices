@@ -3,7 +3,7 @@
 
 import { useState, type FormEvent } from "react"
 import Link from "next/link"
-import { useSearchParams } from "next/navigation"
+
 
 type Service = "walking" | "boarding" | "daycare" | "sitting"
 
@@ -39,14 +39,8 @@ function formatDate(date: string): string {
 }
 
 export default function BookingPage() {
-  const searchParams = useSearchParams()
-  const selectedDate = searchParams.get("date")
   const [service, setService] = useState<Service>("walking")
-  const [startDate, setStartDate] = useState(
-  selectedDate && /^\d{4}-\d{2}-\d{2}$/.test(selectedDate)
-    ? selectedDate
-    : getTodayUK()
-)
+  const [startDate, setStartDate] = useState("2026-11-10")
   const [endDate, setEndDate] = useState("2026-11-10")
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
