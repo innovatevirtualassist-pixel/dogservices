@@ -383,11 +383,17 @@ export default function BookingPage() {
               </p>
 
               <p>
-                <strong>Booking status:</strong>{" "}
-                <span className="font-medium text-amber-800">
-                  Enquiry not yet sent
-                </span>
-              </p>
+  <strong>Next step:</strong>{" "}
+  <span className="font-medium text-emerald-800">
+    Send your enquiry by email for our review.
+  </span>
+</p>
+
+<p className="text-sm text-gray-600">
+  Your booking will only be confirmed after
+  Penkridge Dog Services has reviewed and
+  approved your request.
+</p>
             </div>
 
             <label className="flex items-start gap-3">
