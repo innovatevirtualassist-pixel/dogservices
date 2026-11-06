@@ -71,6 +71,7 @@ export default function PetBookingForm({ initialDate }: { initialDate: string })
       return
     }
 
+    
     const bookingDetails = [
       "Hello Penkridge Dog Services,",
       "",
@@ -94,3 +95,9 @@ export default function PetBookingForm({ initialDate }: { initialDate: string })
       `Age: ${age.trim() || "Not specified"}`,
       `Microchip: ${microchip.trim() || "Not supplied at enquiry stage"}`,
       `Additional information: ${dogDetails.trim() || "None provided"}`,
+      "",
+      "I understand this is an enquiry only.",
+      "The booking is not confirmed until approved.",
+      "",
+      "Thank you!",
+    ].join("\n")
