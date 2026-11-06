@@ -37,14 +37,16 @@ export default function CalendarPage() {
         before your booking is secured.
       </p>
 
-      <div className="mt-8 text-center">
-        <a
-          href="/#contact"
-          className="inline-block rounded-xl border px-6 py-3 font-semibold transition hover:shadow-md"
-        >
-          Enquire About Dog Walking or Boarding
-        </a>
-      </div>
+     
+<div className="mt-8 text-center">
+  <a
+    href="/booking"
+    className="inline-block rounded-xl border px-6 py-3 font-semibold transition hover:shadow-md"
+  >
+    Request a Booking 🐾
+  </a>
+</div>
+
     </main>
   )
 }
