@@ -40,10 +40,18 @@ function formatDate(date: string): string {
   }).format(parsed)
 }
 
-export default function PetBookingForm({ initialDate }: { initialDate: string }) {
-  const [service, setService] = useState<Service>("walking")
+export default function PetBookingForm({
+  initialDate,
+  initialEndDate,
+}: {
+  initialDate: string
+  initialEndDate: string
+}) {
+  const [service, setService] = useState<Service>(
+    initialEndDate > initialDate ? "boarding" : "walking"
+  )
   const [startDate, setStartDate] = useState(initialDate)
-  const [endDate, setEndDate] = useState(initialDate)
+  const [endDate, setEndDate] = useState(initialEndDate)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
